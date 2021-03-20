@@ -1,0 +1,28 @@
+#!/usr/bin/php
+<?php
+
+use test\TestUpdator;
+
+$testable = [
+    "TestConnection",
+    "TestDotenv",
+    "TestDeleter",
+    "TestReader",
+    "TestCreator",
+    "TestUpdator",
+    "TestProducts",
+
+];
+
+function testall($classes){
+    $command = "cd test;";
+
+    foreach($classes as $class){
+        $command .= "echo \"\nClass On Teste >> {$class} << \n\";";
+        $command .= "../vendor/bin/phpunit --color {$class}.php;";
+    }
+
+    return system($command);
+}
+
+echo testall($testable);
