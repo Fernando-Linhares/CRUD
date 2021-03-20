@@ -1,6 +1,6 @@
-        #CRUD Application
+ #CRUD Application
 
-     Crud is a symple server side app, here us work with
+  Crud is a symple server side app, here us work with
 a create, update, delete and read. Therefore your must to
 have installed php language programing, and server mysql.
      About passwords and usernames for server mysql you 
@@ -8,7 +8,7 @@ must to do a file ".env", to acess your database and the
 model and classes. For this on folder "app/src" have a
 entity called Dotenv to make all filter of data on file 
 ".env" and transport to th mysql class connection.
-```
+
     For connection your must to do a file ".env"
         >app
         >public
@@ -16,7 +16,7 @@ entity called Dotenv to make all filter of data on file
         >sh
         >test
         >vendor
-        sh.env
+        .env
 
         Write like this:
             ------------
@@ -35,9 +35,8 @@ entity called Dotenv to make all filter of data on file
                 price FLOAT(10) NOT NULL,
                 cat VARCHAR(50) NOT NULL
                 );
- ```
 
-     To make tests the executable "test-all" will do
+   To make tests the executable "test-all" will do
 the job for test all classes with the Phpunit Framework
 ,the classes test can be used for documentation the for
 classes crud, once a time that operations are implemented
@@ -49,7 +48,7 @@ on test classes through his methods.
     or
         php test-all
     
-    To get start the server the executable "server" will
+  To get start the server the executable "server" will
 do the job for up the server php.
 
     For up server:
@@ -63,7 +62,7 @@ do the job for up the server php.
 
         http://localhost:8000/
 
-    To start application with intens on your database the
+   To start application with intens on your database the
 executable "migrate" will do the this job for you, and will
 insert the data on file "migration.txt" on the database.
 
@@ -72,7 +71,7 @@ insert the data on file "migration.txt" on the database.
     or
         php migrate
 
-    However if you want the application on your shell, the
+   However if you want the application on your shell, the
 executable "shell" will show this app on your shell and more,
 you can create update and delete the itens too.
 
@@ -80,7 +79,7 @@ you can create update and delete the itens too.
 This app are developed by Fernando Linhares on standard github
 software license.
 
-##Dependences:
+   Dependences:
     - php
     - php-mysql( PDO ,enable pdo-extension:mysql on php.ini)
     - mysql-server
