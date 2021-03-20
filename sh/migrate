@@ -1,0 +1,21 @@
+#!/usr/bin/php
+<?php
+require "../vendor/autoload.php";
+
+echo " ----------------------------------------------\n";
+echo "|     Migrate your file of products            |\n";
+echo " -----------------------------------------------\n";
+echo "|       Insert your file of products           |\n";
+echo " ----------------------------------------------\n";
+echo "\n";
+       $file = "../migration.txt";
+    
+    if(file_exists($file)){
+        Http\Controllers\ShellController::migrate($file);
+    }else{
+        if(substr($file,-4) !== ".text")
+            die("please insert the extension of file {$file}");
+        else
+            die("ERROR FILE {$file} DONT FOUND");
+    }
+    
