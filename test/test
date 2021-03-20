@@ -1,0 +1,53 @@
+#!/usr/bin/php
+<?php
+//here is a not to execute
+$file = "../migration.txt";
+
+        $gerator = function () use ($file){
+            $stream = fopen($file, "r");
+                while(!feof($stream)){
+                    yield fgets($stream);
+                }
+            fclose($stream);
+        };
+
+        $filter = function($data,$input){
+
+            $lines = explode("-",$input);
+
+            $pattern = "/".$data.":[a-z0-9]+/i";
+
+            foreach($lines as $line){
+                if(preg_match($pattern,$line,$result)){
+
+                    $res = explode(":",current($result));
+    
+                    $content= next($res);
+                }
+            }
+            return $content;
+        };
+
+        $test = "name:camisa|price:21|cat:nike";
+
+        print($filter("name",$test));
+        print($filter("price",$test));
+        print($filter("cat",$test));
+
+        $interator = $gerator();
+    
+        foreach($interator as $value){   
+                if(preg_match("/[\-]+/",$value))
+                   continue;
+                else{
+                   
+                        echo $filter("name",$value);
+                        echo " - ";
+                        echo $filter("price",$value);
+                        echo " - ";
+                        echo $filter("cat",$value);   
+                        echo "\n";
+                    }
+        }
+       
+    
