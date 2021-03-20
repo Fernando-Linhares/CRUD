@@ -1,4 +1,4 @@
-#CRUD Application
+# CRUD Application
 
   Crud is a symple server side app, here us work with
 a create, update, delete and read. Therefore your must to
@@ -9,7 +9,7 @@ model and classes. For this on folder "app/src" have a
 entity called Dotenv to make all filter of data on file 
 ".env" and transport to th mysql class connection.
 
-    For connection your must to do a file ".env"
+``` For connection your must to do a file ".env"
         >app
         >public
         >resources
@@ -35,7 +35,7 @@ entity called Dotenv to make all filter of data on file
                 price FLOAT(10) NOT NULL,
                 cat VARCHAR(50) NOT NULL
                 );
-
+```
    To make tests the executable "test-all" will do
 the job for test all classes with the Phpunit Framework
 ,the classes test can be used for documentation the for
