@@ -1,11 +1,12 @@
-Dependences:
-    *php
-    *php-mysql lib(PDO) - enable pdo-extension:mysql on php.ini
-    *mysql-server
-    *php-xml - for Phpunit
+##Dependences:
+    - php
+    - php-mysql( PDO ,enable pdo-extension:mysql on php.ini)
+    - mysql-server
+    - php-xml for Phpunit
+    - phpunit( run composer dump-autoload )
 
 
-        CRUD Application
+        #CRUD Application
 
      Crud is a symple server side app, here us work with
 a create, update, delete and read. Therefore your must to
@@ -15,7 +16,7 @@ must to do a file ".env", to acess your database and the
 model and classes. For this on folder "app/src" have a
 entity called Dotenv to make all filter of data on file 
 ".env" and transport to th mysql class connection.
-
+```
     For connection your must to do a file ".env"
         >app
         >public
@@ -23,7 +24,7 @@ entity called Dotenv to make all filter of data on file
         >sh
         >test
         >vendor
-        .env
+        sh.env
 
         Write like this:
             ------------
@@ -42,6 +43,7 @@ entity called Dotenv to make all filter of data on file
                 price FLOAT(10) NOT NULL,
                 cat VARCHAR(50) NOT NULL
                 );
+ ```
 
      To make tests the executable "test-all" will do
 the job for test all classes with the Phpunit Framework
