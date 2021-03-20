@@ -1,4 +1,4 @@
- #CRUD Application
+#CRUD Application
 
   Crud is a symple server side app, here us work with
 a create, update, delete and read. Therefore your must to
@@ -79,10 +79,10 @@ you can create update and delete the itens too.
 This app are developed by Fernando Linhares on standard github
 software license.
 
-   Dependences:
-    - php
-    - php-mysql( PDO ,enable pdo-extension:mysql on php.ini)
-    - mysql-server
-    - php-xml for Phpunit
-    - phpunit( run composer dump-autoload )
+    Dependences:
+     - php
+     - php-mysql( PDO ,enable pdo-extension:mysql on php.ini)
+     - mysql-server
+     - php-xml for Phpunit
+     - phpunit( run composer dump-autoload )
 
