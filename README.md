@@ -81,6 +81,12 @@ software license.
 
     Dependences:
      - php
+     - materializa framework css
+     - mysql
+     - phpunit
+
+
+##To Install
      - php-mysql( PDO ,enable pdo-extension:mysql on php.ini)
      - mysql-server
      - php-xml for Phpunit
