@@ -1,6 +1,6 @@
 # CRUD Application
 
-  Crud is a symple server side app, here us work with
+  Crud is a simple server side app, here us work with
 a create, update, delete and read. Therefore your must to
 have installed php language programing, and server mysql.
      About passwords and usernames for server mysql you 
